@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_REPO", "..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenge_1_REPO.csproj", "{9460AE04-5982-4B45-93B2-466AB61A4DD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9460AE04-5982-4B45-93B2-466AB61A4DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9460AE04-5982-4B45-93B2-466AB61A4DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9460AE04-5982-4B45-93B2-466AB61A4DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9460AE04-5982-4B45-93B2-466AB61A4DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD50E537-7711-4DD0-AA27-5E9776EB1385}
+	EndGlobalSection
+EndGlobal

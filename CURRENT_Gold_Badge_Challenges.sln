@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_REPO", "..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenge_1_REPO.csproj", "{9460AE04-5982-4B45-93B2-466AB61A4DD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_CONSOLE", "Gold_Badge_Challenge_1_CONSOLE\Gold_Badge_Challenge_1_CONSOLE.csproj", "{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_TESTS", "Gold_Badge_Challenge_1_TESTS\Gold_Badge_Challenge_1_TESTS.csproj", "{ED5A7D5D-4D4D-4F1F-A487-D106F6E966E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9460AE04-5982-4B45-93B2-466AB61A4DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9460AE04-5982-4B45-93B2-466AB61A4DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9460AE04-5982-4B45-93B2-466AB61A4DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5A7D5D-4D4D-4F1F-A487-D106F6E966E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5A7D5D-4D4D-4F1F-A487-D106F6E966E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5A7D5D-4D4D-4F1F-A487-D106F6E966E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5A7D5D-4D4D-4F1F-A487-D106F6E966E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace Gold_Badge_Challenge_1_CONSOLE
 {
-    class ProgramUI
+    class ProgramUI_Chal_1
     {
         private MenuItemRepo _menuItemRepo = new MenuItemRepo();
 
         public void Run()
         {
-            SeedData();
             while (UIMenu())
             {
                 Console.WriteLine("Press a key to continue.");
@@ -22,30 +21,20 @@ namespace Gold_Badge_Challenge_1_CONSOLE
                 Console.Clear();
             }
             Console.WriteLine("Signing off.\n" +
-                "Press a key to exit.:");
+                "Press any key to exit.");
             Console.ReadKey();
         }
-
-        //SeedData (for testing)
-        private void SeedData()
-        {
-            var test1 = new MenuItem("Tester1", "TestNumber1", "TestDescription1", "TestIngredients1", "TesterPrice1");
-            var test2 = new MenuItem("Tester2", "TestNumber2", "TestDescription2", "TestIngredients2", "TesterPrice2");
-            _menuItemRepo.AddMenuItemToMenu(test1);
-            _menuItemRepo.AddMenuItemToMenu(test2);
-        }
-
-
 
         //Menu for the UI
         private bool UIMenu()
         {
             Console.Clear();
-            Console.WriteLine("This is the Menu Control Center.  Select an option below, using its associated item number, to perform various tasks within the Cafe menu.\n\n" +
-                "1. Display all Menu items\n" +
-                "2. Create/Add a new item to Menu\n" +
-                "3. Delete an existing Menu item\n" +
-                "0. Exit Control Center");
+            Console.WriteLine("Welcome to the Komodo Cafe Menu Control Center!\n" +
+                "  Select an option below, using its respective [option number], to perform various tasks within our cafe menu.\n\n" +
+                "[1] Create/Add a new item to Menu\n" +
+                "[2] Display all Menu items\n" +
+                "[3] Delete an existing Menu item\n" +
+                "[0] Exit Control Center");
 
             switch (Console.ReadLine())
             {
@@ -64,13 +53,13 @@ namespace Gold_Badge_Challenge_1_CONSOLE
                 case "0":
                     return false;
                 default:
-                    Console.WriteLine("Enter number for desired option (0-3)");
+                    Console.WriteLine("Enter [option number] for desired option (0-3).");
                     break;
             }
             return true;
         }
 
-        //CreateNewMenuItem(); [[[1]]]
+        //CreateNewMenuItem()
         private void CreateNewMenuItem()
         {
             Console.Clear();
@@ -113,7 +102,7 @@ namespace Gold_Badge_Challenge_1_CONSOLE
             Console.Clear();
             DisplayExistingMenuItems();
             Console.WriteLine("Enter menu item number of item you'd like to remove and press Enter:");
-            int menuItemNumber = int.Parse(Console.ReadLine());
+            string menuItemNumber = Console.ReadLine();
             Console.Clear();
             var menuItemToDelete = _menuItemRepo.GetItemByNumber(menuItemNumber);
             DisplayMenuItemFull(menuItemToDelete);
@@ -131,13 +120,6 @@ namespace Gold_Badge_Challenge_1_CONSOLE
             }
         }
 
-        
-
-
-
-        //CREATE helper
-
-
         //Display Helpers
         private void DisplayMenuItemFull(MenuItem menuItem)
         {
@@ -147,15 +129,12 @@ namespace Gold_Badge_Challenge_1_CONSOLE
             Console.WriteLine($"\tIngredients: {menuItem.MenuItemIngredients}");
             Console.WriteLine($"\tPrice: {menuItem.MenuItemPrice}");
         }
-         private void DisplayMenuItemsPartial(MenuItem menuItem)
+        private void DisplayMenuItemsPartial(MenuItem menuItem)
         {
             Console.WriteLine($"\tMenu Item Name: {menuItem.MenuItemName}");
             Console.WriteLine($"\tMenu Item Number: {menuItem.MenuItemNumber}");
             Console.WriteLine($"\tPrice: {menuItem.MenuItemPrice}");
         }
-
-        //DELETE helper
-
 
         //Yes or No answer method
         private bool GetYesOrNo()
@@ -175,7 +154,5 @@ namespace Gold_Badge_Challenge_1_CONSOLE
                 Console.WriteLine("Enter 'y' for yes, or 'n' for no.");
             }
         }
-
-        //blah blah blah
     }
 }

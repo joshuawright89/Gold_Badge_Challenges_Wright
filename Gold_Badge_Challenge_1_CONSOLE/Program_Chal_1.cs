@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Gold_Badge_Challenge_1_CONSOLE
 {
-    class Program
+    class Program_Chal_1
     {
         static void Main(string[] args)
         {
             //Run the ui
-            ProgramUI ui = new ProgramUI();
+            ProgramUI_Chal_1 ui = new ProgramUI_Chal_1();
             ui.Run();
 
         }

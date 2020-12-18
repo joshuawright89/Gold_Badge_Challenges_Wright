@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ED5A7D5D-4D4D-4F1F-A487-D106F6E966E3}</ProjectGuid>
+    <ProjectGuid>{9242E431-457E-4D80-93DC-2A8689626975}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gold_Badge_Challenge_1_TESTS</RootNamespace>
-    <AssemblyName>Gold_Badge_Challenge_1_TESTS</AssemblyName>
+    <RootNamespace>Gold_Badge_Challenges_2_TESTS</RootNamespace>
+    <AssemblyName>Gold_Badge_Challenges_2_TESTS</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,16 +49,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Unit_Tests_Chal_1.cs" />
+    <Compile Include="UnitTests_Chal_2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenge_1_REPO.csproj">
-      <Project>{9460ae04-5982-4b45-93b2-466ab61a4dd6}</Project>
-      <Name>Gold_Badge_Challenge_1_REPO</Name>
+    <ProjectReference Include="..\Gold_Badge_Challenges_2_REPO\Gold_Badge_Challenges_2_REPO.csproj">
+      <Project>{423984a2-8249-4d3e-84c5-c40053dee1f3}</Project>
+      <Name>Gold_Badge_Challenges_2_REPO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

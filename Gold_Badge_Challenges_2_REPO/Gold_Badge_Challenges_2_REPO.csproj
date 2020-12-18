@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Gold_Badge_Challenge_1_CONSOLE</RootNamespace>
-    <AssemblyName>Gold_Badge_Challenge_1_CONSOLE</AssemblyName>
+    <ProjectGuid>{423984A2-8249-4D3E-84C5-C40053DEE1F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gold_Badge_Challenges_2_REPO</RootNamespace>
+    <AssemblyName>Gold_Badge_Challenges_2_REPO</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,18 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program_Chal_1.cs" />
-    <Compile Include="ProgramUI_Chal_1.cs" />
+    <Compile Include="Claim.cs" />
+    <Compile Include="ClaimRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenge_1_REPO.csproj">
-      <Project>{9460ae04-5982-4b45-93b2-466ab61a4dd6}</Project>
-      <Name>Gold_Badge_Challenge_1_REPO</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

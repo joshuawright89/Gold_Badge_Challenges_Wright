@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}</ProjectGuid>
+    <ProjectGuid>{2CF5B3B3-8136-4B98-9869-36AE20604542}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Gold_Badge_Challenge_1_CONSOLE</RootNamespace>
-    <AssemblyName>Gold_Badge_Challenge_1_CONSOLE</AssemblyName>
+    <RootNamespace>Gold_Badge_Challenges_2_CONSOLE</RootNamespace>
+    <AssemblyName>Gold_Badge_Challenges_2_CONSOLE</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program_Chal_1.cs" />
-    <Compile Include="ProgramUI_Chal_1.cs" />
+    <Compile Include="Program_Chal_2.cs" />
+    <Compile Include="ProgramUI_Chal_2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenge_1_REPO.csproj">
-      <Project>{9460ae04-5982-4b45-93b2-466ab61a4dd6}</Project>
-      <Name>Gold_Badge_Challenge_1_REPO</Name>
+    <ProjectReference Include="..\Gold_Badge_Challenges_2_REPO\Gold_Badge_Challenges_2_REPO.csproj">
+      <Project>{423984a2-8249-4d3e-84c5-c40053dee1f3}</Project>
+      <Name>Gold_Badge_Challenges_2_REPO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

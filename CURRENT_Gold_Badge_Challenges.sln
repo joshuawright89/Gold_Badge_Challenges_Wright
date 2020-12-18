@@ -3,17 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_REPO", "..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenge_1_REPO.csproj", "{9460AE04-5982-4B45-93B2-466AB61A4DD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_Cafe_REPO", "..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenge_1_Cafe_REPO.csproj", "{9460AE04-5982-4B45-93B2-466AB61A4DD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_CONSOLE", "Gold_Badge_Challenge_1_CONSOLE\Gold_Badge_Challenge_1_CONSOLE.csproj", "{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_Cafe_CONSOLE", "Gold_Badge_Challenge_1_CONSOLE\Gold_Badge_Challenge_1_Cafe_CONSOLE.csproj", "{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_TESTS", "Gold_Badge_Challenge_1_TESTS\Gold_Badge_Challenge_1_TESTS.csproj", "{ED5A7D5D-4D4D-4F1F-A487-D106F6E966E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_Cafe_TESTS", "Gold_Badge_Challenge_1_TESTS\Gold_Badge_Challenge_1_Cafe_TESTS.csproj", "{ED5A7D5D-4D4D-4F1F-A487-D106F6E966E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_2_CONSOLE", "Gold_Badge_Challenges_2_CONSOLE\Gold_Badge_Challenges_2_CONSOLE.csproj", "{2CF5B3B3-8136-4B98-9869-36AE20604542}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_2_Claims_CONSOLE", "Gold_Badge_Challenges_2_CONSOLE\Gold_Badge_Challenges_2_Claims_CONSOLE.csproj", "{2CF5B3B3-8136-4B98-9869-36AE20604542}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_2_REPO", "Gold_Badge_Challenges_2_REPO\Gold_Badge_Challenges_2_REPO.csproj", "{423984A2-8249-4D3E-84C5-C40053DEE1F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_2_Claims_REPO", "Gold_Badge_Challenges_2_REPO\Gold_Badge_Challenges_2_Claims_REPO.csproj", "{423984A2-8249-4D3E-84C5-C40053DEE1F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_2_TESTS", "Gold_Badge_Challenges_2_TESTS\Gold_Badge_Challenges_2_TESTS.csproj", "{9242E431-457E-4D80-93DC-2A8689626975}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_2_Claims_TESTS", "Gold_Badge_Challenges_2_TESTS\Gold_Badge_Challenges_2_Claims_TESTS.csproj", "{9242E431-457E-4D80-93DC-2A8689626975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_3_Badges_CONSOLE", "Gold_Badge_Challenges_3_Badges_CONSOLE\Gold_Badge_Challenges_3_Badges_CONSOLE.csproj", "{BF5BBAFB-3801-4252-A048-05E45175D5AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_3_Badges_REPO", "Gold_Badge_Challenges_3_Badges_REPO\Gold_Badge_Challenges_3_Badges_REPO.csproj", "{A2D385CB-5A1F-4A99-AAC7-CB9B1DF52EA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_3_Badges_TESTS", "Gold_Badge_Challenges_3_Badges_TESTS\Gold_Badge_Challenges_3_Badges_TESTS.csproj", "{0ECE13F3-D170-4E6B-A605-9247B5279C69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{9242E431-457E-4D80-93DC-2A8689626975}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9242E431-457E-4D80-93DC-2A8689626975}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9242E431-457E-4D80-93DC-2A8689626975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF5BBAFB-3801-4252-A048-05E45175D5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF5BBAFB-3801-4252-A048-05E45175D5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF5BBAFB-3801-4252-A048-05E45175D5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF5BBAFB-3801-4252-A048-05E45175D5AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2D385CB-5A1F-4A99-AAC7-CB9B1DF52EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D385CB-5A1F-4A99-AAC7-CB9B1DF52EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D385CB-5A1F-4A99-AAC7-CB9B1DF52EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D385CB-5A1F-4A99-AAC7-CB9B1DF52EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ECE13F3-D170-4E6B-A605-9247B5279C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECE13F3-D170-4E6B-A605-9247B5279C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECE13F3-D170-4E6B-A605-9247B5279C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECE13F3-D170-4E6B-A605-9247B5279C69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

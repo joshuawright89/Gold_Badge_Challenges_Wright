@@ -24,7 +24,7 @@ namespace Gold_Badge_Challenges_2_CONSOLE
             Console.ReadKey();
         }
 
-        //SEED DATA?
+        //SEED helper
         private void SeedData()
         {
             var claim1 = new Claim("1", ClaimType.Auto, "Car accident on 465", 400.00, new DateTime(2018,4,25), new DateTime(2018,4,27), true);
@@ -49,15 +49,15 @@ namespace Gold_Badge_Challenges_2_CONSOLE
             switch (Console.ReadLine())
             {
                 case "1":
-                    //Display all claims
+                    //Display
                     DisplayAllClaims();
                     break;
                 case "2":
-                    //Take next claim
+                    //Peek
                     TakeNextClaim();
                     break;
                 case "3":
-                    //Add new claim
+                    //Add new
                     CreateNewClaim();
                     break;
                 case "0":
@@ -70,7 +70,7 @@ namespace Gold_Badge_Challenges_2_CONSOLE
             return true;
         }
 
-        //Create new claim method
+        //CREATE function
         private void CreateNewClaim()
         {
             Claim newClaim = new Claim();
@@ -97,7 +97,7 @@ namespace Gold_Badge_Challenges_2_CONSOLE
             Console.WriteLine("Give a brief description for this claim:");
             newClaim.ClaimDescription = Console.ReadLine();
 
-            Console.WriteLine("Give an amount for the claim:");
+            Console.WriteLine("Give an amount for the claim(round up to nearest dollar):");
             newClaim.ClaimAmount = int.Parse(Console.ReadLine());
 
             Console.WriteLine("What was the date of the incident? (format: MO/DA/YEAR)");
@@ -112,7 +112,7 @@ namespace Gold_Badge_Challenges_2_CONSOLE
             _claimRepo.AddNewClaim(newClaim);
         }
 
-
+        //Display all claims
         private void DisplayAllClaims()
         {
             Console.Clear();
@@ -137,7 +137,7 @@ namespace Gold_Badge_Challenges_2_CONSOLE
         }
 
 
-        //Take Next Claim
+        //Peek function
         private void TakeNextClaim()
         {
             Claim claim = _claimRepo.TakeNextClaim();
@@ -145,7 +145,7 @@ namespace Gold_Badge_Challenges_2_CONSOLE
             DequeueClaim();
         }
 
-        //Delete claim once finished
+        //Dequeue function
         private void DequeueClaim()
         {
             Console.WriteLine("Are you ready to remove this claim? (y/n)");
@@ -162,7 +162,7 @@ namespace Gold_Badge_Challenges_2_CONSOLE
             }
         }
 
-        //Yes or No answer method
+        //Yes/No helper
         private bool GetYesOrNo()
         {
             while (true)

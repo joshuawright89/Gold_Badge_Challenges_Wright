@@ -23,20 +23,13 @@ namespace Gold_Badge_Challenges_2_REPO
         }
 
 
-        //Take Next Claim??????
+        //Take Next Claim/Peek
         public Claim TakeNextClaim()
         {
             return _claimQueue.Peek();
         }
-        //When this option is chosen, user will be shown the next claim in queue.
-
-
-        //Confirm -- "Would you like to open this claim? (y/n)"
-
-        //"When the agent presses 'y', the claim will be pulled off the top of the queue. If the agent presses 'n', it will go back to the main menu."
-        //// To Remove an element from the Queue:
-
-        //Dequeue Helper method
+        
+        //Helper (Dequeue claim)
         public bool DequeueClaim()
         {
             int initialCount = _claimQueue.Count;
@@ -48,7 +41,7 @@ namespace Gold_Badge_Challenges_2_REPO
             return false;
         }
 
-        //Helper Method (for DELETE function)
+        //Helper (Find claim by ID)
         public Claim GetClaimByID(string claimID)
         {
             foreach (Claim claim in _claimQueue)
@@ -60,30 +53,6 @@ namespace Gold_Badge_Challenges_2_REPO
             }
             return null;
         }
-
-        /*Delete claim (JOSH'S WAY)***
-        public bool DeleteClaimFromQueue(string claimID)
-        {
-            Claim claim = GetClaimByID(claimID);
-
-            if (claim == null)
-            {
-                return false;
-            }
-
-            int initialCount = _claimQueue.Count;
-            _claimQueue.Dequeue(claim);
-
-            if (initialCount > _claimQueue.Count)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }*/
-
     }
 }
 

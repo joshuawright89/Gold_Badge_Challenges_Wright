@@ -11,7 +11,6 @@ namespace Gold_Badge_Challenges_2_TESTS
         private ClaimRepo _claimRepo;
         private Claim _claim;
 
-
         [TestInitialize]
         public void Arrange()
         {
@@ -22,19 +21,19 @@ namespace Gold_Badge_Challenges_2_TESTS
         }
 
 
-        //CREATE METHOD TEST
+        //CREATE test
         [TestMethod]
         public void TestCreateMethod_ShouldReturnTrue()
         {
-            //Arrange -- set up the data or controlled environment for test to run
+            //Arrange
             ClaimRepo claimRepo = new ClaimRepo();
             Claim claimToAdd = new Claim("TestClaim");
 
-            //Act --call method to be tested
+            //Act
             claimRepo.AddNewClaim(claimToAdd);
 
-            //Assert -- method has run; no write some lines to confirm it behaved as desired
-            List<Claim> claimDirectory = ClaimRepo.DisplayAllClaimsInQueue();
+            //Assert
+            Queue<Claim> claimDirectory = claimRepo.DisplayAllClaimsInQueue();
 
             bool IdIsEqual = false;
             foreach(Claim claim in claimDirectory)
@@ -48,13 +47,41 @@ namespace Gold_Badge_Challenges_2_TESTS
             Assert.IsTrue(IdIsEqual);
         }
 
-        //Read
+        //READ test
+        [TestMethod]
+        public void TestReadMethod_ShouldBeNotNull()
+        {
+            //Arrange([TestInitialize])
+            //Act
+            Queue<Claim> listFromQueue = _claimRepo.DisplayAllClaimsInQueue();
+            //Assert
+            Assert.IsNotNull(listFromQueue);
+        }
 
+        //Peek and Dequeue test
+        [TestMethod]
+        public void TestPeek_and_Dequeue_ShouldReturnTrue()
+        {
+            //Arrange([TestInitialize])
+            //Act
+            bool removeResult = _claimRepo.DequeueClaim();
+            //Assert
+            Assert.IsTrue(removeResult);
+        }
 
-
-        //Peek/Take next/Remove from queue when done
-
-
-        //GetClaimByID()
+        //Helper (find claim by ID) test
+        [TestMethod]
+        public void TestGetClaimByID()
+        {
+            //Arrange
+            ClaimRepo claimRepo = new ClaimRepo();
+            Claim claimToAdd = new Claim("TestClaimID");
+            claimRepo.AddNewClaim(claimToAdd);
+            //Act
+            Claim claimByID = claimRepo.GetClaimByID
+                (claimToAdd.ClaimID);
+            //Assert
+            Assert.AreEqual(claimToAdd, claimByID);
+        }
     }
 }

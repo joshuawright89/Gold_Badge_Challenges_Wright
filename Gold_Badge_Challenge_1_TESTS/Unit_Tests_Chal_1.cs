@@ -21,19 +21,18 @@ namespace Gold_Badge_Challenge_1_TESTS
         }
 
 
-        //CREATE METHOD TEST (((DONE)))
+        //CREATE test
         [TestMethod]
         public void TestCreateMethod_ShouldReturnTrue()
         {
-            //ARRANGE -- set up the data or controlled environment for the test to run
+            //ARRANGE
             MenuItemRepo menuItemRepo = new MenuItemRepo();
             MenuItem itemToAdd = new MenuItem("TestMenuItem");
-
-
-            //Act -- now call the method to be tested
+            
+            //Act
             menuItemRepo.AddMenuItemToMenu(itemToAdd);
-
-            //Assert -- method has run; now we write some lines to confirm that it behaved the way it should
+            
+            //Assert
             List<MenuItem> menuItemDirectory = menuItemRepo.GetWholeMenu();
 
             bool IdIsEqual = false; 
@@ -48,23 +47,22 @@ namespace Gold_Badge_Challenge_1_TESTS
             Assert.IsTrue(IdIsEqual);
         }
 
-        //READ METHOD TEST (((DONE)))
+        //READ test
         [TestMethod]
         public void TestReadMethod_ShouldNotBeNull()
         {
-            //ARRANGE -- set up the data or controlled environment for the test to run
-            //TestInitialize
+            //ARRANGE([TestInitialize])
 
-            //Act -- now call the method to be tested
+            //Act
             List<MenuItem> listFromRepo = _menuItemRepo.GetWholeMenu();
 
-            //Assert -- method has run; now we write some lines to confirm that it behaved the way it should
+            //Assert
             Assert.IsNotNull(listFromRepo);
 
 
         }
 
-        //HELPER METHOD TEST (((DONE)))
+        //HELPER (find item by number) test
         [TestMethod]
         public void TestGetItemByNumber()
         {
@@ -81,7 +79,7 @@ namespace Gold_Badge_Challenge_1_TESTS
 
         }
 
-        //DELETE METHOD TEST (((DONE)))
+        //DELETE test
         [TestMethod]
         public void TestDeleteMethod_ShouldReturnTrue()
         {

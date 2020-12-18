@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Gold_Badge_Challenges_2_REPO\Gold_Badge_Challenges_2_REPO.csproj">
+    <ProjectReference Include="..\Gold_Badge_Challenges_2_REPO\Gold_Badge_Challenges_2_Claims_REPO.csproj">
       <Project>{423984a2-8249-4d3e-84c5-c40053dee1f3}</Project>
-      <Name>Gold_Badge_Challenges_2_REPO</Name>
+      <Name>Gold_Badge_Challenges_2_Claims_REPO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

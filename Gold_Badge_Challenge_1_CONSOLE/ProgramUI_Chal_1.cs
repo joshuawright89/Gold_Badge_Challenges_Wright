@@ -14,6 +14,7 @@ namespace Gold_Badge_Challenge_1_CONSOLE
 
         public void Run()
         {
+            SeedData();
             while (UIMenu())
             {
                 Console.WriteLine("Press a key to continue.");
@@ -24,6 +25,20 @@ namespace Gold_Badge_Challenge_1_CONSOLE
                 "Press any key to exit.");
             Console.ReadKey();
         }
+
+        //Seed helper
+        private void SeedData()
+        {
+            var testItem1 = new MenuItem("tester1", "test number1", "description test1", "ingredients test1", "10.99");
+            var testItem2 = new MenuItem("tester2", "test number2", "description test2", "ingredients test2", "7.49");
+            var testItem3 = new MenuItem("tester3", "test number2", "description test3", "ingredients test3", "14.99");
+            var testItem4 = new MenuItem("tester4", "test number4", "description test4", "ingredients test4", "9.99");
+            _menuItemRepo.AddMenuItemToMenu(testItem1);
+            _menuItemRepo.AddMenuItemToMenu(testItem2);
+            _menuItemRepo.AddMenuItemToMenu(testItem3);
+            _menuItemRepo.AddMenuItemToMenu(testItem4);
+        }
+
 
         //Menu for the UI
         private bool UIMenu()
@@ -106,7 +121,7 @@ namespace Gold_Badge_Challenge_1_CONSOLE
             Console.Clear();
             var menuItemToDelete = _menuItemRepo.GetItemByNumber(menuItemNumber);
             DisplayMenuItemFull(menuItemToDelete);
-            Console.WriteLine("Confirm: Remove Menu Item?");
+            Console.WriteLine("Confirm: Remove Menu Item? (y/n)");
             if (GetYesOrNo())
             {
                 if (_menuItemRepo.DeleteMenuItem(menuItemNumber))
@@ -131,7 +146,7 @@ namespace Gold_Badge_Challenge_1_CONSOLE
         }
         private void DisplayMenuItemsPartial(MenuItem menuItem)
         {
-            Console.WriteLine($"\tMenu Item Name: {menuItem.MenuItemName}");
+            Console.WriteLine($"\n\tMenu Item Name: {menuItem.MenuItemName}");
             Console.WriteLine($"\tMenu Item Number: {menuItem.MenuItemNumber}");
             Console.WriteLine($"\tPrice: {menuItem.MenuItemPrice}");
         }

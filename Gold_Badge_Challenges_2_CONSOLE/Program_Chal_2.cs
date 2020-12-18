@@ -10,7 +10,6 @@ namespace Gold_Badge_Challenges_2_CONSOLE
     {
         static void Main(string[] args)
         {
-            //Run the ui
             ProgramUI_Chal_2 ui = new ProgramUI_Chal_2();
             ui.Run();
         }

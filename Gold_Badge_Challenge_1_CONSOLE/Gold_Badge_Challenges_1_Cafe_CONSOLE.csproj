@@ -51,9 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenge_1_Cafe_REPO.csproj">
+    <ProjectReference Include="..\..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenges_1_Cafe_REPO.csproj">
       <Project>{9460ae04-5982-4b45-93b2-466ab61a4dd6}</Project>
-      <Name>Gold_Badge_Challenge_1_Cafe_REPO</Name>
+      <Name>Gold_Badge_Challenges_1_Cafe_REPO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,2 @@
+C:\Users\joshu\OneDrive\Desktop\ElevenFiftyProjects\00_Gold_Badge_Challenges\Gold_Badge_Challenges_3_Badges_CONSOLE\obj\Debug\Gold_Badge_Challenges_3_Badges_CONSOLE.csprojAssemblyReference.cache
+C:\Users\joshu\OneDrive\Desktop\ElevenFiftyProjects\00_Gold_Badge_Challenges\Gold_Badge_Challenges_3_Badges_CONSOLE\obj\Debug\Gold_Badge_Challenges_3_Badges_CONSOLE.csproj.CoreCompileInputs.cache

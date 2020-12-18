@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Program_Chal_3.cs" />
+    <Compile Include="ProgramUI_Chal_3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gold_Badge_Challenges_3_Badges_REPO\Gold_Badge_Challenges_3_Badges_REPO.csproj">
+      <Project>{a2d385cb-5a1f-4a99-aac7-cb9b1df52ea0}</Project>
+      <Name>Gold_Badge_Challenges_3_Badges_REPO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

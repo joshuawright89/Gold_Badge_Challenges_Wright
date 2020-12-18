@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_Cafe_REPO", "..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenge_1_Cafe_REPO.csproj", "{9460AE04-5982-4B45-93B2-466AB61A4DD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_1_Cafe_REPO", "..\..\..\..\source\repos\Gold_Badge_Challenges\Gold_Badge_Challenge_1\Gold_Badge_Challenges_1_Cafe_REPO.csproj", "{9460AE04-5982-4B45-93B2-466AB61A4DD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_Cafe_CONSOLE", "Gold_Badge_Challenge_1_CONSOLE\Gold_Badge_Challenge_1_Cafe_CONSOLE.csproj", "{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_1_Cafe_CONSOLE", "Gold_Badge_Challenge_1_CONSOLE\Gold_Badge_Challenges_1_Cafe_CONSOLE.csproj", "{B8DFB627-EB02-4FA6-B918-ED1480ABC8EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenge_1_Cafe_TESTS", "Gold_Badge_Challenge_1_TESTS\Gold_Badge_Challenge_1_Cafe_TESTS.csproj", "{ED5A7D5D-4D4D-4F1F-A487-D106F6E966E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_1_Cafe_TESTS", "Gold_Badge_Challenge_1_TESTS\Gold_Badge_Challenges_1_Cafe_TESTS.csproj", "{ED5A7D5D-4D4D-4F1F-A487-D106F6E966E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gold_Badge_Challenges_2_Claims_CONSOLE", "Gold_Badge_Challenges_2_CONSOLE\Gold_Badge_Challenges_2_Claims_CONSOLE.csproj", "{2CF5B3B3-8136-4B98-9869-36AE20604542}"
 EndProject

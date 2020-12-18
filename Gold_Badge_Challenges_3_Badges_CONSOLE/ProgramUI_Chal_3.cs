@@ -80,11 +80,28 @@ namespace Gold_Badge_Challenges_3_Badges_CONSOLE
         //DISPLAY
         public void DisplayAllBadges()
         {
-
+            Console.Clear();
+            var allBadges = _badgeRepo.GetDirectory();
+            foreach(var badge in allBadges)
+            {
+                DisplayAllBadges();
+            }
+            Console.WriteLine();
         }
         //UPDATE
         public void UpdateExistingBadge()
         {
+            //Display all
+            DisplayAllBadges();
+
+            //Ask for ID of badge to update
+            Console.WriteLine("Enter the ID of the badge to be edited.");
+
+            //Retrieve that badge
+            int oldBadge = Console.ReadLine();
+
+            //Rebuild badge
+
 
         }
 

@@ -58,8 +58,6 @@ namespace Gold_Badge_Challenge_1_TESTS
 
             //Assert
             Assert.IsNotNull(listFromRepo);
-
-
         }
 
         //HELPER (find item by number) test

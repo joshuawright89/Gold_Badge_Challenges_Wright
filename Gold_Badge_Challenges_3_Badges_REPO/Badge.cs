@@ -15,7 +15,7 @@ namespace Gold_Badge_Challenges_3_Badges_REPO
         //doors.add("Door1", 1);
 
         public Badge() { }
-
+        public Badge(string BadgeID) { }
         public Badge(int badgeID, List<string> doorsAccessible)
         {
             BadgeID = badgeID;
